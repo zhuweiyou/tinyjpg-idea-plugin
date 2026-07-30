@@ -11,7 +11,7 @@ repositories {
 dependencies {
     testImplementation("junit:junit:4.13.2")
     intellijPlatform {
-        intellijPlatform()
+        intellijIdea("2025.3.3")
         testFramework(org.jetbrains.intellij.platform.gradle.TestFrameworkType.Platform)
     }
 }
@@ -21,8 +21,6 @@ kotlin {
 }
 
 intellijPlatform {
-    type = "IC"
-    version = "2025.3.3"
     publishing {
         token.set(providers.gradleProperty("publishToken").orElse(providers.environmentVariable("PUBLISH_TOKEN")))
     }
