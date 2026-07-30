@@ -19,3 +19,9 @@ dependencies {
 kotlin {
     jvmToolchain(17)
 }
+
+intellijPlatform {
+    publishing {
+        token.set(providers.gradleProperty("publishToken").orElse(providers.environmentVariable("PUBLISH_TOKEN")))
+    }
+}
