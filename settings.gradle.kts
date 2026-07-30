@@ -1,4 +1,4 @@
-rootProject.name = "tinyjpg-plugin"
+rootProject.name = "tinyjpg-idea-plugin"
 
 pluginManagement {
     repositories {

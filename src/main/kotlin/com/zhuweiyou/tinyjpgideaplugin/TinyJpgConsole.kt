@@ -1,4 +1,4 @@
-package com.zhuweiyou.tinyjpgplugin
+package com.zhuweiyou.tinyjpgideaplugin
 
 import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.project.Project

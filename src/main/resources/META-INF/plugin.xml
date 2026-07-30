@@ -1,8 +1,8 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.zhuweiyou.tinyjpgplugin.tinyjpg-plugin</id>
+    <id>com.zhuweiyou.tinyjpgideaplugin.tinyjpg-idea-plugin</id>
     <name>TinyJPG Compressor</name>
-    <vendor url="https://github.com/zhuweiyou">zhuweiyou</vendor>
+    <vendor url="https://github.com/zhuweiyou/tinyjpg-idea-plugin">zhuweiyou</vendor>
     <description><![CDATA[
         <h2>TinyJPG Image Compressor</h2>
         <p>Right-click images or directories in Project View to compress JPEG, PNG, and WebP images with one click.</p>
@@ -32,7 +32,7 @@
 
     <actions>
         <action id="TinyJpgAction"
-                class="com.zhuweiyou.tinyjpgplugin.TinyJpgAction"
+                class="com.zhuweiyou.tinyjpgideaplugin.TinyJpgAction"
                 text="TinyJPG Compress"
                 description="Compress selected images with TinyJPG">
             <add-to-group group-id="ProjectViewPopupMenu" anchor="after" relative-to-action="ReplaceInPath"/>

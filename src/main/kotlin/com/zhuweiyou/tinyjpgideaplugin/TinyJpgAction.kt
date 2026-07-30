@@ -1,4 +1,4 @@
-package com.zhuweiyou.tinyjpgplugin
+package com.zhuweiyou.tinyjpgideaplugin
 
 import com.intellij.openapi.actionSystem.ActionUpdateThread
 import com.intellij.openapi.actionSystem.AnAction
