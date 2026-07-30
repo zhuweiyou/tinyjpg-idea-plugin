@@ -1,0 +1,10 @@
+.gradle
+.idea
+.intellijPlatform
+build
+.claude
+.kotlin
+.run
+
+# macOS
+.DS_Store
