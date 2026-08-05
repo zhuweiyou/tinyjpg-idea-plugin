@@ -105,7 +105,7 @@ object TinyJpgService {
                                 val ratio = if (inputSz > 0) outputSz.toDouble() / inputSz.toDouble() * 100 else 0.0
                                 val saved = inputSz - outputSz
                                 console.print("✓ ${fmtSize(inputSz)} → ${fmtSize(outputSz)}  " +
-                                        "(${"%.1f".format(ratio)}%%, saved ${fmtSize(saved)})\n")
+                                        "(${"%.1f".format(ratio)}%, saved ${fmtSize(saved)})\n")
                                 synchronized(lock) { success++ }
                             } else {
                                 val err = result.exceptionOrNull()
