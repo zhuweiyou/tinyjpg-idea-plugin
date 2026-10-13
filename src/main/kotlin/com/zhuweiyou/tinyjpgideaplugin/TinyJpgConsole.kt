@@ -2,7 +2,6 @@ package com.zhuweiyou.tinyjpgideaplugin
 
 import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.project.Project
-import com.intellij.openapi.wm.ToolWindow
 import com.intellij.openapi.wm.ToolWindowAnchor
 import com.intellij.openapi.wm.ToolWindowManager
 import com.intellij.ui.content.ContentFactory
@@ -78,7 +77,12 @@ class TinyJpgConsole private constructor(private val textPane: JTextPane) {
 
                 // registerToolWindow must be called on EDT
                 ApplicationManager.getApplication().invokeAndWait {
-                    tw = manager.registerToolWindow(TOOLWINDOW_ID, false, ToolWindowAnchor.BOTTOM, true)
+                    tw = manager.registerToolWindow(TOOLWINDOW_ID) {
+                        anchor = ToolWindowAnchor.BOTTOM
+                        canCloseContent = false
+                        sideTool = true
+                        hideOnEmptyContent = false
+                    }
                     tw!!.title = "TinyJPG Console"
                     tw!!.setIcon(com.intellij.icons.AllIcons.Toolwindows.ToolWindowMessages)
 
