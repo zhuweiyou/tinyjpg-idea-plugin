@@ -1,6 +1,6 @@
 # TinyJPG Compressor Changelog
 
-## [1.0.1](https://github.com/zhuweiyou/tinyjpg-idea-plugin/releases/tag/v1.0.1)
+## [v1.0.1](https://github.com/zhuweiyou/tinyjpg-idea-plugin/releases/tag/v1.0.1)
 
 ### Fixed
 
@@ -8,7 +8,7 @@
 - Removed the duplicate percent sign from compression ratio output in the console.
 - Aligned the JVM toolchain and GitHub Actions JDK with Java 21 to support the IntelliJ Platform's inline API.
 
-## [1.0.0](https://github.com/zhuweiyou/tinyjpg-idea-plugin/releases/tag/v1.0.0)
+## [v1.0.0](https://github.com/zhuweiyou/tinyjpg-idea-plugin/releases/tag/v1.0.0)
 
 ### Added
 
